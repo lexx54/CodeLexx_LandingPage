@@ -1,0 +1,38 @@
+@mixin display() {
+  display: flex;
+  height: 100vh;
+}
+
+.principal-container {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 200px;
+  background-color: $secondary-color;
+}
+.info-container {
+  background-color: $tertiary-color;
+
+  .info-card {
+    height: 100vh;
+    border: 2px solid black;
+  }
+}
+
+@media (min-width: 420px) {
+  main {
+    @include display();
+
+    .principal-container {
+      position: static;
+      flex: 0 0 40%;
+      height: inherit;
+    }
+
+    .info-container {
+      flex: 0 0 60%;
+      height: inherit;
+      overflow-y: auto;
+    }
+  }
+}
