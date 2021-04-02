@@ -1,0 +1,12 @@
+$principal-color: #8b008b;
+$secondary-color: #1e90ff;
+$tertiary-color: #dcdcdc;
+
+@mixin flexRow {
+  display: flex;
+  flex-direction: row;
+}
+@mixin flexCol {
+  display: flex;
+  flex-direction: column;
+}

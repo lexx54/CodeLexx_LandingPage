@@ -1,0 +1,26 @@
+main {
+  @include flexCol;
+  height: 100%;
+}
+
+.principal-container {
+  @include flexCol;
+  height: 100vh;
+  background-color: $secondary-color;
+}
+.info-container {
+  height: 100vh;
+}
+
+@media screen and (min-width: 480px) {
+  main {
+    flex-direction: row;
+  }
+  .principal-container {
+    flex: 0 0 40%;
+  }
+  .info-container {
+    flex: 0 0 60%;
+    overflow-y: auto;
+  }
+}

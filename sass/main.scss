@@ -1,5 +1,6 @@
-$principal-color: #8b008b;
-$secondary-color: #1e90ff;
-$tertiary-color: #dcdcdc;
+@import "base";
+@import "layout";
+@import "components";
 
-@import "layout/layout";
+// @import "layout/layout";
+// @import "landing/mobile";

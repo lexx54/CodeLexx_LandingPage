@@ -1,25 +1,53 @@
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+
 .principal-container {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  height: 200px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   background-color: #1e90ff; }
 
 .info-container {
-  background-color: #dcdcdc; }
-  .info-container .info-card {
-    height: 100vh;
-    border: 2px solid black; }
+  height: 100vh; }
 
-@media (min-width: 420px) {
+@media screen and (min-width: 480px) {
   main {
-    display: flex;
-    height: 100vh; }
-    main .principal-container {
-      position: static;
-      flex: 0 0 40%;
-      height: inherit; }
-    main .info-container {
-      flex: 0 0 60%;
-      height: inherit;
-      overflow-y: auto; } }
+    flex-direction: row; }
+  .principal-container {
+    flex: 0 0 40%; }
+  .info-container {
+    flex: 0 0 60%;
+    overflow-y: auto; } }
+
+.principal-title {
+  font-size: 3rem;
+  font-weight: bold;
+  flex: 1; }
+
+.principal-slogan {
+  font-size: 1.5rem;
+  text-align: center;
+  flex: 1; }
+
+.principal-img {
+  width: 80%;
+  height: 50px;
+  border-radius: 10px;
+  background-color: black;
+  margin: 0 auto;
+  flex: 4; }
+
+.principal-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-self: end;
+  flex: 1; }
+  .principal-contact a {
+    border: 1px solid black; }
+
+.info-card {
+  height: inherit;
+  background-color: #dcdcdc; }
