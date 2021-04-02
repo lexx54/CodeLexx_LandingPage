@@ -44,9 +44,19 @@ main {
   flex-direction: row;
   justify-content: space-around;
   justify-self: end;
+  align-items: center;
   flex: 1; }
   .principal-contact a {
-    border: 1px solid black; }
+    border: 1px solid black;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    text-decoration: none; }
+    .principal-contact a span {
+      margin-top: 0.3rem;
+      font-size: 0.7rem; }
 
 .info-card {
   height: inherit;
