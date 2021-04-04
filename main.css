@@ -35,9 +35,12 @@ main {
   width: 80%;
   height: 50px;
   border-radius: 10px;
-  background-color: black;
   margin: 0 auto;
   flex: 4; }
+  .principal-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
 
 .principal-contact {
   display: flex;
@@ -47,7 +50,6 @@ main {
   align-items: center;
   flex: 1; }
   .principal-contact a {
-    border: 1px solid black;
     font-size: 2rem;
     display: flex;
     flex-direction: column;
@@ -59,5 +61,35 @@ main {
       font-size: 0.7rem; }
 
 .info-card {
-  height: inherit;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background-color: #dcdcdc; }
+  .info-card h2 {
+    color: #758e4f;
+    border-bottom: 3px double #758e4f;
+    flex: 0 0 10%;
+    font-size: 2.5rem;
+    margin: 0.5rem 0; }
+  .info-card .car-content {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid black; }
+
+.info-card:nth-child(3) article {
+  flex: 0 0 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .info-card:nth-child(3) article h3 {
+    margin: 0.5rem 0 0.3rem;
+    font-size: 1.5rem; }
+  .info-card:nth-child(3) article .info-type-img {
+    background-color: black;
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 3px #758e4f;
+    margin-bottom: 0.5rem; }

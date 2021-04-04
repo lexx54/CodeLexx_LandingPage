@@ -6,7 +6,7 @@ main {
 .principal-container {
   @include flexCol;
   height: 100vh;
-  background-color: $secondary-color;
+  background-color: $principal-color;
 }
 .info-container {
   height: 100vh;
