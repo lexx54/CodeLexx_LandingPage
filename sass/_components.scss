@@ -1,12 +1,14 @@
 .principal-title {
-  font-size: 3rem;
   font-weight: bold;
-  flex: 1;
+  visibility: collapse;
 }
 .principal-slogan {
-  font-size: 1.5rem;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 2rem;
   text-align: center;
   flex: 1;
+  line-height: 2.5rem;
 }
 .principal-img {
   width: 80%;
@@ -55,16 +57,57 @@
     margin: 0.5rem 0;
   }
 
-  .car-content {
+  .card-content {
     flex: 2;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: 1px solid black;
   }
 }
 
-.info-card:nth-child(3) {
+#pages {
+  .card-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "first first first ."
+      ". second second second"
+      "third third third ."
+      "fourth fourth fourth fourth"
+      "fifth fifth fifth fifth"
+      "sixth sixth sixth sixth"
+      "seventh seventh seventh seventh";
+
+    p {
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+
+    .info-card-logos {
+      font-size: 3rem;
+      color: $principal-color;
+    }
+    $labels: (
+      "first",
+      "second",
+      "third",
+      "fourth",
+      "fifth",
+      "sixth",
+      "seventh"
+    );
+
+    @for $i from 1 to 8 {
+      p:nth-child(#{$i}) {
+        grid-area: #{nth($labels, $i)};
+      }
+    }
+  }
+}
+
+#types {
   article {
     flex: 0 0 80%;
     @include flexCol;

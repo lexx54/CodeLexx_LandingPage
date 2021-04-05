@@ -22,14 +22,16 @@ main {
     overflow-y: auto; } }
 
 .principal-title {
-  font-size: 3rem;
   font-weight: bold;
-  flex: 1; }
+  visibility: collapse; }
 
 .principal-slogan {
-  font-size: 1.5rem;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 2rem;
   text-align: center;
-  flex: 1; }
+  flex: 1;
+  line-height: 2.5rem; }
 
 .principal-img {
   width: 80%;
@@ -71,22 +73,48 @@ main {
     flex: 0 0 10%;
     font-size: 2.5rem;
     margin: 0.5rem 0; }
-  .info-card .car-content {
+  .info-card .card-content {
     flex: 2;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    border: 1px solid black; }
+    justify-content: center; }
 
-.info-card:nth-child(3) article {
+#pages .card-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "first first first ." ". second second second" "third third third ." "fourth fourth fourth fourth" "fifth fifth fifth fifth" "sixth sixth sixth sixth" "seventh seventh seventh seventh"; }
+  #pages .card-content p {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1.5rem; }
+  #pages .card-content .info-card-logos {
+    font-size: 3rem;
+    color: #1e90ff; }
+  #pages .card-content p:nth-child(1) {
+    grid-area: first; }
+  #pages .card-content p:nth-child(2) {
+    grid-area: second; }
+  #pages .card-content p:nth-child(3) {
+    grid-area: third; }
+  #pages .card-content p:nth-child(4) {
+    grid-area: fourth; }
+  #pages .card-content p:nth-child(5) {
+    grid-area: fifth; }
+  #pages .card-content p:nth-child(6) {
+    grid-area: sixth; }
+  #pages .card-content p:nth-child(7) {
+    grid-area: seventh; }
+
+#types article {
   flex: 0 0 80%;
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .info-card:nth-child(3) article h3 {
+  #types article h3 {
     margin: 0.5rem 0 0.3rem;
     font-size: 1.5rem; }
-  .info-card:nth-child(3) article .info-type-img {
+  #types article .info-type-img {
     background-color: black;
     width: 100%;
     height: 180px;
