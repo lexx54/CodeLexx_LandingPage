@@ -110,7 +110,8 @@ main {
   flex: 0 0 80%;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 1rem; }
   #types article h3 {
     margin: 0.5rem 0 0.3rem;
     font-size: 1.5rem; }
@@ -121,3 +122,22 @@ main {
     border-radius: 10px;
     box-shadow: 4px 4px 3px #758e4f;
     margin-bottom: 0.5rem; }
+  #types article .lazyload {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    object-position: center 0px; }
+  #types article p {
+    color: gray;
+    font-style: italic; }
+
+.form {
+  display: flex;
+  flex-direction: column; }
+
+.input-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.5rem 0; }

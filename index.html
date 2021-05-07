@@ -13,6 +13,7 @@
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
     />
+    <script src="script.js" defer type="module"></script>
   </head>
   <body>
     <main>
@@ -64,47 +65,115 @@
               <i class="fab fa-css3-alt"></i>
               <i class="fab fa-js-square"></i>
               <i class="fab fa-bootstrap"></i>
-              <i class="fab fa-sass"></i>
+              <i class="fab fa-node-js"></i>
               <i class="fab fa-react"></i>
             </p>
             <p>we can make your ideas come reality</p>
           </div>
         </section>
-        <section class="info-card">
-          <h2>Card 2</h2>
-          <div class="card-content"></div>
-        </section>
         <section class="info-card" id="types">
           <h2>Types of Pages</h2>
           <div class="card-content">
-            <article>
+            <article class="type-article">
               <h3>Landing Page</h3>
               <div class="info-type-img"></div>
-              <p>Ideal for ...</p>
+              <p>Ideal to present your Brand</p>
             </article>
-            <article>
-              <h3>Products Page</h3>
+            <article class="type-article">
+              <h3>Educational/Info Page</h3>
               <div class="info-type-img"></div>
-              <p>Ideal for ...</p>
+              <p>Ideal for Educative Purpose</p>
             </article>
-            <article>
+            <article class="type-article">
               <h3>Single Page</h3>
-              <div class="info-type-img"></div>
-              <p>Ideal for ...</p>
+              <div class="info-type-img">
+                <img
+                  data-src="./assets/landing.png"
+                  alt="lading page example"
+                  loading="lazy"
+                  class="lazyload"
+                />
+              </div>
+              <p>Ideal for web apps</p>
             </article>
-            <article>
+            <article class="type-article">
               <h3>E-commerce</h3>
               <div class="info-type-img"></div>
-              <p>Ideal for ...</p>
+              <p>Ideal for bussines</p>
+              <p>not fully available yet</p>
             </article>
           </div>
         </section>
         <section class="info-card">
-          <h2>Card 4</h2>
-          <div class="card-content"></div>
+          <h2>Pages Features</h2>
+          <div class="card-content">
+            <article class="features-group">
+              <h3>Forms</h3>
+              <div></div>
+            </article>
+            <article class="features-group">
+              <h3>User Registration</h3>
+              <div></div>
+            </article>
+            <article class="features-group">
+              <h3>Api Integration</h3>
+              <div></div>
+            </article>
+            <article class="features-group">
+              <h3>More...</h3>
+              <div></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="info-card" id="contact">
+          <h2>Contact Me</h2>
+          <div class="card-content">
+            <form method="post" class="form" id="form">
+              <div class="input-group">
+                <label for="name">Full Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id=""
+                  title="number are not allowed"
+                  pattern="[a-zA-z\s]+"
+                  placeholder="e.g Jose Perez"
+                  required
+                />
+              </div>
+              <div class="input-group">
+                <label for="country">Country</label>
+                <input
+                  type="text"
+                  name="country"
+                  title="number are not allowed"
+                  pattern="[a-zA-z\s]+"
+                  placeholder="e.g Germany"
+                />
+              </div>
+              <div class="input-group">
+                <label for="">Subject</label>
+                <input
+                  type="text"
+                  name="subject"
+                  title="number are not allowed"
+                  pattern="[a-zA-z\s]+"
+                  placeholder="e.g pricing consulting"
+                  required
+                />
+              </div>
+              <div class="input-group">
+                <label for="questions">Questions</label>
+                <textarea name="questions" id="" cols="25" rows="5"></textarea>
+              </div>
+              <button type="submit" id="contact-submit">
+                Send Information
+              </button>
+            </form>
+          </div>
         </section>
       </div>
     </main>
-    <script src="script.js" defer></script>
   </body>
 </html>

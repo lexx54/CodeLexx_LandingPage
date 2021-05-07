@@ -112,6 +112,7 @@
     flex: 0 0 80%;
     @include flexCol;
     align-items: center;
+    margin-bottom: 1rem;
 
     h3 {
       margin: 0.5rem 0 0.3rem;
@@ -125,5 +126,25 @@
       box-shadow: 4px 4px 3px $secondary-color;
       margin-bottom: 0.5rem;
     }
+    .lazyload {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      object-position: center 0px;
+    }
+    p {
+      color: gray;
+      font-style: italic;
+    }
   }
+}
+
+.form {
+  @include flexCol;
+}
+.input-group {
+  @include flexRow;
+  justify-content: space-between;
+  margin: 0.5rem 0;
 }
