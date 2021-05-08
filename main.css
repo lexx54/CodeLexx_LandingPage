@@ -128,9 +128,15 @@ main {
     object-fit: cover;
     border-radius: 10px;
     object-position: center 0px; }
-  #types article p {
+  #types article p a,
+  #types article p a:active,
+  #types article p a:hover {
     color: gray;
     font-style: italic; }
+
+@media screen and (min-width: 1020px) {
+  #types article .info-type-img {
+    height: 300px; } }
 
 .form {
   display: flex;

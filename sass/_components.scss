@@ -134,8 +134,23 @@
       object-position: center 0px;
     }
     p {
-      color: gray;
-      font-style: italic;
+      a,
+      a:active,
+      a:hover {
+        color: gray;
+        font-style: italic;
+        // text-decoration: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  #types {
+    article {
+      .info-type-img {
+        height: 300px;
+      }
     }
   }
 }
